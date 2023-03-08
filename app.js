@@ -32,7 +32,7 @@ app.get('/:option', (req, res) => {
   ]
   const showPage = options.find(item => item.title.toLowerCase() === option)
 
-  res.render('show',{showPage:showPage})
+  res.render('show',{showPage})
 })
 
 
